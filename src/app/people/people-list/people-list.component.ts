@@ -9,5 +9,9 @@ import { PeopleService } from '../services/people.service';
 export class PeopleListComponent {
   peopleService = inject(PeopleService);
 
-  people = this.peopleService.people;
+  people: any;
+
+  async ngOnInit() {
+    this.people = await this.peopleService.getPeople();
+  }
 }
