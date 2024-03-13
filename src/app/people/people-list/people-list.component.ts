@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PeopleService } from '../services/people.service';
 
 @Component({
   selector: 'app-people-list',
   templateUrl: './people-list.component.html',
-  styleUrl: './people-list.component.css'
+  styleUrl: './people-list.component.css',
 })
 export class PeopleListComponent {
+  peopleService = inject(PeopleService);
 
+  people = this.peopleService.people;
 }

@@ -1,1 +1,4 @@
-<p>person-item works!</p>
+<ng-template [ngIf]="person">
+  <h2>{{ person.name }}</h2>
+  <p>{{ person.url }}</p>
+</ng-template>
