@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #818181;
+  border-radius: 4px;
+  padding: 0.3em;
+  justify-content: space-between;
+}
+
+h2 {
+  text-shadow: 2px 2px 5px gold;
+}
+
+p {
+  color: black;
+  margin-right: 50px;
+}

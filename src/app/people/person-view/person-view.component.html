@@ -1,0 +1,15 @@
+<ng-template [ngIf]="person">
+  <h2>{{ person.properties.name }}</h2>
+  <p>{{ person.description }}</p>
+  <p>
+    Hight: {{ person.properties.height }}cm, Mass:
+    {{ person.properties.mass }}kg
+  </p>
+  <p>
+    Has {{ person.properties.hair_color }} hair and
+    {{ person.properties.eye_color }} eyes.
+  </p>
+</ng-template>
+<ng-template [ngIf]="!person">
+  <p>No person with that id.</p>
+</ng-template>
